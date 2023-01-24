@@ -1,0 +1,61 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 23, 2023 at 09:36 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `kpi system`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sort`
+--
+
+CREATE TABLE `sort` (
+  `Lecturerid` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `department` varchar(100) NOT NULL,
+  `percentage` double(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sort`
+--
+
+INSERT INTO `sort` (`Lecturerid`, `name`, `department`, `percentage`) VALUES
+(1, 'DR. BADRUL HISHAM', 'BIOMEDICAL SCIENCE', 29.50),
+(2, 'DR. BAKIAH', 'BIOMEDICAL SCIENCE', 90.70),
+(3, 'DR. TAN JUN JIE', 'BIOMEDICAL SCIENCE', 30.70),
+(4, 'DR. TANG THEAN HOCK', 'BIOMEDICAL SCIENCE', 27.90),
+(5, 'DR. SITI SALMAH', 'CLINICAL MEDICINE', 46.20),
+(6, 'DR. ZARINA THASNEEM', 'CLINICAL MEDICINE', 23.60),
+(7, 'DR. MD AZMAN', 'TOXICOLOGY', 43.40),
+(8, 'DR. LIM VUANGHAO', 'TOXICOLOGY', 84.90),
+(9, 'DR. FATANAH', 'DENTAL SCIENCE', 64.60),
+(10, 'DR. NOREHAN', 'DENTAL SCIENCE', 119.20),
+(11, 'DR. FAZLIAH', 'DENTAL SCIENCE', 103.10),
+(12, 'DR. FARRIS', 'COMMUNITY HEALTH', 126.30),
+(13, 'DR. AHMAD MUNIR', 'COMMUNITY HEALTH', 41.80),
+(14, 'DR. KHAIRIAH', 'BIOMEDICAL IMAGING', 111.70),
+(15, 'DR. RAFIDAH', 'BIOMEDICAL IMAGING', 98.30);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
